@@ -8,6 +8,7 @@ const pool = new Pool({
   port: 5432,
 });
 
+/*
 pool.query("SELECT NOW() as now", (err, res) => {
   if (err) {
     console.log(err.stack);
@@ -15,5 +16,6 @@ pool.query("SELECT NOW() as now", (err, res) => {
     console.log(res.rows[0]);
   }
 });
+*/
 
 module.exports = { pool };
